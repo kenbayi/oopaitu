@@ -1,5 +1,6 @@
 package com.company;
 
+//implemented from Payable interface
 public class Person implements Payable, Comparable<Person> {
     private static int id_gen = 1;
     private int id;
@@ -14,7 +15,7 @@ public class Person implements Payable, Comparable<Person> {
         setName(name);
         setSurname(surname);
     }
-
+    //getters and setters
     public int getId() {
         return id;
     }
@@ -41,10 +42,11 @@ public class Person implements Payable, Comparable<Person> {
     public String getPosition() {
         return "Student";
     }
+    //from interface
     public double getPaymentAmount() {
         return 0.00;
     }
-
+    //comparing payment
     public int compareTo(Person person){
         return Double.compare(this.getPaymentAmount(), person.getPaymentAmount());
     }

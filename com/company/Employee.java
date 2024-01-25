@@ -12,7 +12,7 @@ public class Employee extends Person {
         setPosition(position);
         setSalary(salary);
     }
-
+    //getters amd setters others inherited from Person
     public void setPosition(String position) {
         this.position = position;
     }
@@ -33,7 +33,7 @@ public class Employee extends Person {
     public String getPosition() {
         return position;
     }
-
+    //output
     @Override
     public String toString() {
         return "Employee: " + getId() +

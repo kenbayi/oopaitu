@@ -9,13 +9,13 @@ public class Student extends Person{
         super(name, surname);
         setGpa(gpa);
     }
+    //getters and setter others inherited from Person
     public void setGpa(Double gpa) {
         this.gpa = gpa;
     }
     public Double getGpa() {
         return gpa;
     }
-
     @Override
     public double getPaymentAmount() {
         if(getGpa() > 2.67){
@@ -25,7 +25,7 @@ public class Student extends Person{
             return 0.00;
         }
     }
-
+    //output
     @Override
     public String toString() {
         return "Student: " + getId() + ". " + getName() + " " + getSurname();
